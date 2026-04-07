@@ -1,17 +1,33 @@
 package com.pluralsight;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class VariableApp {
     static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+        // Step 1
+        String favColor="Black";
+        short year=2026;
+        char middleLetter= 'K';
+        boolean havePet= false;
+        String message="Keep Working!";
+
+        System.out.println("Fav Color:"+favColor);
+        System.out.println("Start Year :"+year);
+        System.out.println("Middle Letter:"+middleLetter);
+        System.out.println("Having Pet :"+havePet);
+        System.out.println("Message :"+message);
+
+
+        // Step 2
+        byte numberOfDays= 7;
+        double price=4.99;
+        char favLetter= 'A';
+        boolean raining= true;
+
+        System.out.printf(
+                "Number of days in week %d. The coffee price is $%.2f. My fav letter is %c. Now it is raining %b",
+                numberOfDays, price, favLetter, raining
+        );
+
+        //
     }
 }
