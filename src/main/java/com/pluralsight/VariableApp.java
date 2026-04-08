@@ -24,10 +24,18 @@ public class VariableApp {
         boolean raining= true;
 
         System.out.printf(
-                "Number of days in week %d. The coffee price is $%.2f. My fav letter is %c. Now it is raining %b",
+                "Number of days in week %d. The coffee price is $%.2f. My fav letter is %c. Now it is raining %b \n",
                 numberOfDays, price, favLetter, raining
         );
 
         //
+
+        int x=3;
+        int sum1= 4+ x++;
+
+        x=3;
+        int sum2= 4 + ++x;
+
+        System.out.println(sum1 +" : " + sum2);
     }
 }
